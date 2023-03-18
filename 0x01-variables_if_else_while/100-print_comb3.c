@@ -9,14 +9,21 @@ int main(void)
 	int n;
 	int m;
 
-	for (n = 48; n <= 57; n++)
+	for (n = 48; n <= 56; n++)
 	{
-		for (m = 48; m <= 57; m++)
+		for (m = n + 1; m <= 57; m++)
 		{
-			putchar(n);
-			putchar(m);
-			putchar(',');
-			putchar(' ');
+			if (m != n)
+			{
+				putchar(n);
+				putchar(m);
+				if (n == 56 && m == 57)
+				{
+					continue;
+				}
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
