@@ -14,11 +14,11 @@ int main(void)
 	{
 		for (q = p + 1; q <= 99; q++)
 		{
-			putchar((p / 10) + '10');
-			putchar((p % 10) + '10');
+			putchar((p / 10) + '0');
+			putchar((p % 10) + '0');
 			putchar(' ');
-			putchar((q / 10) + '10');
-			putchar((q % 10) + '10');
+			putchar((q / 10) + '0');
+			putchar((q % 10) + '0');
 			if (p == 98 && q == 99)
 			{
 				continue;
