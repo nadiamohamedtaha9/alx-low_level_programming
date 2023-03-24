@@ -20,5 +20,9 @@ void fizz_buzz(void)
 		{
 			printf("FizzBuzz ");
 		}
+		else
+		{
+			printf("%d ", x);
+		}
 	}
 }
