@@ -10,10 +10,6 @@ void more_numbers(void)
 	{
 		for (b = 0; b < 15; b++)
 		{
-			if (b >= 10)
-			{
-				_putchar((b / 10) + '0')
-			}
 			_putchar(b + '0');
 		}
 		_putchar('\n');
