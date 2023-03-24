@@ -1,34 +1,40 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * fizz_buzz - printing to 100
+ * main - Entry point
+ * Description: print numbers 1 - 100 followed by a new line
+ * Return: Always 0 (Success)
  */
-void fizz_buzz(void)
+int main(void)
 {
-	int x;
+	int num;
 
-	for (x = 1; x <= 100; x++)
+	for (num = 1; num <= 100; ++num)
 	{
-		if (x == 100)
+		if (num % 3 == 0 && !(num % 5 == 0))
 		{
-			printf("Buzz")
+			printf("Fizz");
 		}
-		else if (x % 3 == 0)
+		else if (num % 5 == 0 && !(num % 3 == 0))
 		{
-			printf("Fizz ");
+			printf("Buzz");
 		}
-		else if (x % 5 == 0)
+		else if (num % 3 == 0 && num % 5 == 0)
 		{
-			printf("Buzz ");
-		}
-		else if (x % 3 == 0 && x % 5 == 0)
-		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else
 		{
-			printf("%d ", x);
+			printf("%d", num);
+		}
+
+		if (num != 100)
+		{
+			printf(" ");
+		}
+		else
+		{
+			printf("\n");
 		}
 	}
-	printf(
+	return (0);
 }
